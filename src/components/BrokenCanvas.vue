@@ -253,18 +253,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div ref="slotRef" class="broken-canvas-container">
+  <div ref="slotRef" class="broken-canvas-container" style="position: relative;">
     <slot />
   </div>
 </template>
-
-<style scoped>
-.broken-canvas-container {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-}
-</style>
